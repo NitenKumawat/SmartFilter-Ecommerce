@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+  @apply border p-2 w-full rounded;
+}
+
+.btn {
+  @apply bg-blue-500 text-white px-4 py-2 rounded mx-2;
+}
+/* Range input custom style */
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #4f46e5 0%, #a78bfa 100%); /* Purple gradient for the track */
+    border-radius: 10px; /* Rounded track */
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition for track */
+  }
+  
+  /* Customize the thumb (slider handle) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Thumb size */
+    height: 20px; /* Thumb size */
+    background-color: #ffffff; /* White thumb */
+    border: 2px solid #4f46e5; /* Purple border around the thumb */
+    border-radius: 50%; /* Round thumb */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Thumb size */
+    height: 20px; /* Thumb size */
+    background-color: #ffffff; /* White thumb */
+    border: 2px solid #4f46e5; /* Purple border around the thumb */
+    border-radius: 50%; /* Round thumb */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Hover effect on thumb */
+  input[type="range"]:hover::-webkit-slider-thumb {
+    background-color: #4f46e5; /* Purple thumb on hover */
+    transform: scale(1.2); /* Slightly larger thumb on hover */
+  }
+  
+  input[type="range"]:hover::-moz-range-thumb {
+    background-color: #4f46e5; /* Purple thumb on hover */
+    transform: scale(1.2); /* Slightly larger thumb on hover */
+  }
+  
+  /* Active state for the track (when slider is in use) */
+  input[type="range"]:active {
+    background: linear-gradient(to right, #6b46c1 0%, #c4b5fd 100%); /* Darker gradient when active */
+  }
+  
