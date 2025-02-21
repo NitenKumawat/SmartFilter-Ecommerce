@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+const API_URL = import.meta.env.VITE_BACKEND_URL;  // No process.env!
+
 
 function ProductList() {
   const [products, setProducts] = useState([]);
@@ -20,7 +22,7 @@ function ProductList() {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:5900/api/products");
+      const response = await axios.get(`${API_URL}/api/products`);
       setProducts(response.data);
       setFilteredProducts(response.data);
     } catch (error) {

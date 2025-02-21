@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+const API_URL = import.meta.env.VITE_BACKEND_URL; // No process.env!
 
 function ProductForm({ onProductAdded }) {
   const [product, setProduct] = useState({
@@ -20,7 +21,7 @@ function ProductForm({ onProductAdded }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5900/api/products", product);
+      const response = await axios.post(`${API_URL}api/products`, product);
       onProductAdded(response.data); // Notify parent component about the added product
       setProduct({
         name: "",
