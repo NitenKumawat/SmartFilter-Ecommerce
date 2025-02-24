@@ -56,7 +56,7 @@ Then follow your hosting provider's instructions.
 - **Frontend:** React + Vite, Tailwind CSS  
 - **Backend:** Node.js, Express.js, MongoDB, Mongoose  
 - **Algorithms:** Sliding Window & Two-Pointer for filtering  
-- **Deployment:** Render (Backend), Vercel/Netlify (Frontend)  
+- **Deployment:** Render (Backend), Vercel (Frontend)  
 
 
 
