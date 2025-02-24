@@ -13,7 +13,7 @@ A modern **MERN stack** e-commerce platform with **advanced product filtering an
 
 ## 🎥 Demo  
 
-[Live Demo](https://smartfilter-ecommerce.vercel.app)  
+[Live Demo](https://smart-filter-ecommerce.vercel.app/)  
 
 ## 📂 Installation  
 
@@ -58,9 +58,7 @@ Then follow your hosting provider's instructions.
 - **Algorithms:** Sliding Window & Two-Pointer for filtering  
 - **Deployment:** Render (Backend), Vercel/Netlify (Frontend)  
 
-## 📸 Screenshots  
 
-![Ecommerce Filtering UI](https://your-image-link.png)  
 
 ## 👨‍💻 Author  
 
@@ -73,4 +71,4 @@ This project is licensed under the **MIT License**.
 ## 🔗 Links  
 
 📂 **GitHub Repository:** [SmartFilter-Ecommerce](https://github.com/NitenKumawat/SmartFilter-Ecommerce)  
-🌐 **Live Demo:** [smartfilter-ecommerce.vercel.app](https://smartfilter-ecommerce.vercel.app)  
+🌐 **Live Demo:** [smartfilter-ecommerce.vercel.app](https://smart-filter-ecommerce.vercel.app/)   
